@@ -2,4 +2,4 @@
 
 ## Organization
 
-The *backend* directory contains information about the Q experience backends. 
+The *backend* directory contains information about the difference Q experience backends. 
