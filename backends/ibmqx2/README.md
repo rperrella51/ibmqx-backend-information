@@ -76,7 +76,7 @@ A frame change (FC) is equivalent to applying a virtual *Z*-gate in software, wh
 All the GD has a gate time of 83ns and the gate time of GF are {167, 150, 208, 145, 133, 133} ns for {CX0\_1, CX0\_2, CX1\_2, CX3\_2, CX3\_4, CX4\_2} respectively. There is an additional buffer of 7ns after each GD or GF pulse. 
 
 
-###Two-Qubit Gates
+### Two-Qubit Gates
 All currently calibrated two qubit gates and their directions are defined in the coupling map and shown in the device picture below.  Generally, two qubit gates are possible between neighboring qubits that are connected by a superconducting bus resonator.  The quantum experience uses the cross resonance interaction as the basis for the CX-gate.  This interaction is stronger when choosing the qubit with higher frequency to be the control qubit and the lower frequency qubit to be the target, so the frequencies of the qubits determines the direction of the gate.  
 
 Reported gate errors are the average error per Clifford gate as measured using randomized benchmarking (RB). The Clifford group is constructed using the primitive gates provide on the QX2.
