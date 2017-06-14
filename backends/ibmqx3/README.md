@@ -18,11 +18,11 @@ Where a: [b] means a CNOT with qubit a as control and b as target can be impleme
 
 The connectivity is provided by total 22 coplanar waveguide (CPW) "bus" resonators, each of which connects two qubits. The connectivity configuration is shown in the figure below where the colored dots indicate qubits and the colored bars indicate CPW bus resonators. Three different resonant frequencies are used for the bus resonators. The white bars indicate the buses with the resonant frequency of 6.25 GHz, the grey bars 6.45 GHz and the black bars 6.65 GHz.    
 
-<img src="images/16Q_bus.png?raw=true" width="750">
+<img src="images/ibmqx3-bus.png?raw=true" width="750">
 
 Each qubit has a dedicated CPW readout resonator attached (labeled as R) for control and readout. The following picture shows the chip layout.
 
-<img src="images/16Q_photo.png?raw=true" width="320">
+<img src="images/ibmqx3-labeled.png?raw=true" width="320">
 
 The following table shows some of the main experimental parameters for this device.
 
@@ -47,9 +47,9 @@ The following table shows some of the main experimental parameters for this devi
 
 where &omega;<sup>R</sup><sub>i</sub> is the resonance frequency of the readout resonator, &omega;<sub>i</sub> = (E<sub>i</sub> - E<sub>0</sub>)/&hbar; is the qubit frequency with i={0...1,0...10,...,01...0,1...0}.  The anharmonicity (&delta;<sub>i</sub>) is the difference between the frequency of the 1-2 transition and the 0-1 transition. That is it is given by &delta;<sub>i</sub> = (E<sub>2i</sub> - 2E<sub>i</sub>+ E<sub>0</sub> )/&hbar;.  &chi; is the qubit-cavity coupling strength, and and &kappa; is the cavity coupling to the environment (&kappa;).
 
-Crosstalk, which we parameterize by &zeta;<sub>ij</sub> = (E<sub>i+j</sub> - E<sub>i</sub> - E<sub>j</sub> + E<sub>0</sub>)/&hbar; is measured using a **J**oint **A**mplification of **ZZ** (JAZZ) experiment, which is a modified **BI**linear **R**otational **D**ecoupling (BIRD) [^fn]. The standard BIRD sequence used in nuclear magnetic resonance (NMR) is a Ramsey experiment on one qubit with echo pulses on both the measured qubit (Q<sub>i</sub>) and the coupled qubit (Q<sub>j</sub>).  In the JAZZ experiment, this sequence is performed twice, for each initial state of the coupled qubit. Additionally, the phase of the final &pi;/2-rotation is varied in order to detect an oscillating signal. &zeta;<sub>ij</sub> is equal to the frequency difference found between the two experiments.  The JAZZ experiment is shown in the figure below, and the measurements of all &zeta;<sub>ij</sub> are in the following table.  The GD pulse notation is defined below in the Gate Specification section.
+Crosstalk, which we parameterize by &zeta;<sub>ij</sub> = (E<sub>i+j</sub> - E<sub>i</sub> - E<sub>j</sub> + E<sub>0</sub>)/&hbar; is measured using a **J**oint **A**mplification of **ZZ** (JAZZ) experiment, which is a modified **BI**linear **R**otational **D**ecoupling (BIRD) [^fn1]. The standard BIRD sequence used in nuclear magnetic resonance (NMR) is a Ramsey experiment on one qubit with echo pulses on both the measured qubit (Q<sub>i</sub>) and the coupled qubit (Q<sub>j</sub>).  In the JAZZ experiment, this sequence is performed twice, for each initial state of the coupled qubit. Additionally, the phase of the final &pi;/2-rotation is varied in order to detect an oscillating signal. &zeta;<sub>ij</sub> is equal to the frequency difference found between the two experiments.  The JAZZ experiment is shown in the figure below, and the measurements of all &zeta;<sub>ij</sub> are in the following table.  The GD pulse notation is defined below in the Gate Specification section.
 
-[^fn]: J.R. Garbow, D.P. Weitekamp, A. Pines, Bilinear rotation decoupling of homonuclear scalar interactions, Chemical Physics Letters, Volume 93, Issue 5, 1982, Pages 504-509.
+[^fn1]: J.R. Garbow, D.P. Weitekamp, A. Pines, Bilinear rotation decoupling of homonuclear scalar interactions, Chemical Physics Letters, Volume 93, Issue 5, 1982, Pages 504-509.
 
 <img src="images/zz_sequence.png?raw=true" width="400">
 
@@ -100,7 +100,7 @@ The relaxation (T<sub>1</sub>) and coherence (T<sub>2</sub>) times for each qubi
 ## Experimental Setup
 The following cartoon shows a depiction of the device I/O microwave setup. We acknowledge MIT-Lincoln lab for providing the traveling-wave parametric amplifiers (TWPA) for this system.   
 
-<img src="images/Exp-16Qsetup.png?raw=true" width="400">
+<img src="images/ibmqx3-expsetup.png?raw=true" width="400">
 
 ## Gate Specification
 
@@ -139,8 +139,8 @@ All the GD has a gate time of 90ns and the gate times for all GF pulses used in 
 
 All currently calibrated two qubit gates and their directions are defined in the coupling map and shown in the device picture below.  Generally, two qubit gates are possible between neighboring qubits that are connected by a superconducting bus resonator.  The quantum experience uses the cross resonance interaction as the basis for the CX-gate.  This interaction is stronger when choosing the qubit with higher frequency to be the control qubit and the lower frequency qubit to be the target, so the frequencies of the qubits determines the direction of the gate.  There are some exceptions to the rule of high frequency control/low frequency target: the gate direction must be reversed if the higher levels of the control qubit are degenerate with the target qubit or if either qubit is coupled to a third (spectator) qubit that has the same frequency or a higher level with the same frequency as the target.  In two cases on the QX3, no gate is possible between neighboring qubits because of degeneracies with spectator qubits that prevent the gate from working in either direction.  
 
-<img src="images/chip-scheme-q16.png?raw=true" width="600">
+<img src="images/ibmqx3-connections.png?raw=true" width="600">
 
-Reported gate errors are measured using randomized benchmarking (RB). RB gives the average error per Clifford gate, which we convert to error per gate according to the set of primitive gates used on QX3.
+Reported gate errors are measured using simultaneous randomized benchmarking (RB)[^fn2]. RB gives the average error per Clifford gate, which we convert to error per gate according to the set of primitive gates used on QX3.
 
-
+[^fn2]: Jay M. Gambetta, A. D. Córcoles, S. T. Merkel, B. R. Johnson, John A. Smolin, Jerry M. Chow, Colm A. Ryan, Chad Rigetti, S. Poletto, Thomas A. Ohki, Mark B. Ketchen, and M. Steffen, Characterization of Addressability by Simultaneous Randomized Benchmarking, Phys. Rev. Lett. 109, 240504.
