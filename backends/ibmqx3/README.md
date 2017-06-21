@@ -109,7 +109,7 @@ The following cartoon shows a depiction of the device I/O microwave setup. We ac
 
 A frame change (FC) is equivalent to applying a virtual *Z*-gate in software, where *Z*(&theta;)=FC(-&theta;). Gaussian derivative (GD) and Gaussian flattop (GF) pulses are defined with amplitude and angle parameters.
 
-All the GD has a gate time of 90ns and the gate times for all GF pulses used in CX gates are given in the table below. There is an additional buffer of 10ns after each GD or GF pulse. 
+All the GD have a gate time of 90ns and the gate times for all GF pulses used in CX gates are given in the table below. There is an additional buffer of 10ns after each GD or GF pulse. 
 
 | CX Gate | GF Gate Time (ns) |
 |----|----|
@@ -120,10 +120,10 @@ All the GD has a gate time of 90ns and the gate times for all GF pulses used in 
 | **CX4_3**   | 304 |
 | **CX4_5**   | 210 |
 | **CX6_7**   | 170 |
-| **CX6_11**  | 161 |
+| **CX6_11**  | 174 |
 | **CX7_10**  | 187 |
-| **CX8_7**   | 348 |
-| **CX9_8**   | 217 |
+| **CX8_7**   | 265 |
+| **CX9_8**   | 239 |
 | **CX9_10**  | 283 |
 | **CX11_10** | 196 |
 | **CX12_5**  | 270 |
