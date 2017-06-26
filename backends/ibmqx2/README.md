@@ -81,6 +81,6 @@ All currently calibrated two qubit gates and their directions are defined in the
 
 <img src="images/ibmqx2-connections.png?raw=true" width="320">
 
-Reported gate errors are the average error per Clifford gate as measured using simultaneous randomized benchmarking (RB)[^fn2]. The Clifford group is constructed using the primitive gates provide on the QX2.
+Reported gate errors are measured using simultaneous randomized benchmarking (RB)[^fn2]. RB gives the average error per Clifford gate, which we convert to error per gate according to the set of primitive gates used on QX2.
 
 [^fn2]: Jay M. Gambetta, A. D. Córcoles, S. T. Merkel, B. R. Johnson, John A. Smolin, Jerry M. Chow, Colm A. Ryan, Chad Rigetti, S. Poletto, Thomas A. Ohki, Mark B. Ketchen, and M. Steffen, Characterization of Addressability by Simultaneous Randomized Benchmarking, Phys. Rev. Lett. 109, 240504.
