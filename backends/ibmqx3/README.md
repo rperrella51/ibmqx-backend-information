@@ -118,7 +118,7 @@ All the GD have a gate time of 90ns and the gate times for all GF pulses used in
 | **CX2_3**   | 230 |
 | **CX3_14**  | 348 |
 | **CX4_3**   | 304 |
-| **CX4_5**   | 210 |
+| **CX4_5**   | 310 |
 | **CX6_7**   | 170 |
 | **CX6_11**  | 174 |
 | **CX7_10**  | 187 |
