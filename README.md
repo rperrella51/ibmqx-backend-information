@@ -1,9 +1,20 @@
-# IBM Q experience user information. 
+# IBM Q experience user information.
 
 ## Organization
 
-The qiskit-qx-info repo will contain information that useful to IBM Q experience users. 
+The qiskit-qx-info repo contains information useful to IBM Q experience users
 
-The *backends* directory contains information about the different Q experience backends. Initially we have uploaded the specification documents for our available hardware backends. Soon, we will update this to include specifications on various simulation backends. We anticipate the simulation backends to be community driven as well and welcome the inclusion of new ones that can plug into our interface.
+### Backends
+The *backends* directory contains information about the IBM Q experience backends. Initially there are documents for available hardware backends. Soon, we will update this to include specifications on various simulation backends. We anticipate the simulation backends to be community-driven as well and welcome the inclusion of new ones that can plug into our interface.
 
-For future research papers, we encourage the authors to reference the relevant backend specification document used, e.g. ibmqx2 or ibmqx3, with a link to the github readme file. We think the device information will be an important resource and hope it helps our users understand a bit more what's going on under the covers!
+## Citation format
+
+For research papers, we encourage authors to acknowledge the IBM Q experience with  
+
+  >We acknowledge use of the IBM Q experience for this work. The views expressed are those of the authors and do not reflect the official policy or position of IBM or the IBM Q Experience team.
+
+The canonical reference for hardware specifications are
+
+* 5-qubit backend: IBM QX team, "ibmqx2 backend specification," (2017). Retrieved from https://ibm.biz/qiskit-ibmqx2
+* 16-qubit backend: IBM QX team, "ibmqx3 backend specification," (2017). Retrieved from https://ibm.biz/qiskit-ibmqx3
+
