@@ -18,3 +18,8 @@ The canonical reference for hardware specifications are
 * 5-qubit backend: IBM QX team, "ibmqx2 backend specification," (2017). Retrieved from https://ibm.biz/qiskit-ibmqx2
 * 16-qubit backend: IBM QX team, "ibmqx3 backend specification," (2017). Retrieved from https://ibm.biz/qiskit-ibmqx3
 
+## Other QISKit projects
+
+* [Python SDK](https://github.com/IBM/qiskit-sdk-py) Software development kit for working with quantum programs in Python.
+* [Python API](https://github.com/IBM/qiskit-api-py) API Client to use IBM Q experience in Python.
+* [OpenQasm](https://github.com/IBM/qiskit-openqasm) Examples and tools for the OpenQASM intermediate representation.
