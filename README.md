@@ -20,6 +20,6 @@ The canonical reference for hardware specifications are
 
 ## Other QISKit projects
 
-* [Python SDK](https://github.com/IBM/qiskit-sdk-py) Software development kit for working with quantum programs in Python.
-* [Python API](https://github.com/IBM/qiskit-api-py) API Client to use IBM Q experience in Python.
-* [OpenQasm](https://github.com/IBM/qiskit-openqasm) Examples and tools for the OpenQASM intermediate representation.
+* [Python SDK](https://github.com/QISKit/qiskit-sdk-py) Software development kit for working with quantum programs in Python.
+* [Python API](https://github.com/QISKit/qiskit-api-py) API Client to use IBM Q experience in Python.
+* [OpenQasm](https://github.com/QISKit/qiskit-openqasm) Examples and tools for the OpenQASM intermediate representation.
