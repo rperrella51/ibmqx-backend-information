@@ -1,4 +1,4 @@
-# IBM Q experience user information.
+# IBM Q experience backend information.
 
 ## Organization
 
