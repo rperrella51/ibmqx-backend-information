@@ -2,7 +2,7 @@
 
 ## Organization
 
-The qiskit-qx-info repo contains information useful to IBM Q experience users
+The *ibmqx-backend-information* repo contains information useful to IBM Q experience users
 
 ### Backends
 The *backends* directory contains information about the IBM Q experience backends. Initially there are documents for available hardware backends. Soon, we will update this to include specifications on various simulation backends. We anticipate the simulation backends to be community-driven as well and welcome the inclusion of new ones that can plug into our interface.
@@ -20,8 +20,8 @@ The canonical reference for hardware specifications are
 
 ## Other QISKit projects
 
-* [OpenQasm](https://github.com/QISKit/qiskit-openqasm) Examples and tools for the OpenQASM intermediate representation.
-* [Python SDK](https://github.com/QISKit/qiskit-sdk-py) Software development kit for working with quantum programs in Python.
+* [ibmqx user guide](https://github.com/QISKit/ibmqx-user-guides) The users guides for the IBM Q experience.
+* [OpenQasm](https://github.com/QISKit/openqasm) Examples and tools for the OpenQASM intermediate representation.
 * [Python API](https://github.com/QISKit/qiskit-api-py) API Client to use IBM Q experience in Python.
-* [Tutorial](https://github.com/QISKit/qiskit-tutorial) Jupyter notebooks for using QISKit. 
-* [QX User Guide](https://github.com/QISKit/qiskit-qx-user-guides) The users guides for the IBM Q experience.
+* [Python SDK](https://github.com/QISKit/qiskit-sdk-py) Software development kit for working with quantum programs in Python.
+* [Tutorials](https://github.com/QISKit/qiskit-tutorial) Jupyter notebooks for using QISKit.
