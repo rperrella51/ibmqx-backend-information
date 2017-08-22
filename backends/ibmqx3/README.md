@@ -1,6 +1,6 @@
 # IBM QX3
 
-This document contains information about the IBM Quantum Experience **ibmqx3** backend. 
+This document contains information about the IBM Q experience **ibmqx3** backend. 
 
 ## Contributors (alphabetical)
 Baleegh Abdo, Vivekananda Adiga, Lev Bishop, Markus Brink, Nicholas Bronn, Jerry Chow, Antonio Córcoles, Andrew Cross, Jay M. Gambetta, Jose Chavez-Garcia, Jared Hertzberg, Oblesh Jinka, George Keefe, David McKay, Salvatore Olivadese, Jason Orcutt, Hanhee Paik, Jack Rohrs, Sami Rosenblatt, Jim Rozen, Martin Sandberg, Dongbing Shao, Sarah Sheldon, Firat Solgun, Maika Takita
@@ -10,13 +10,13 @@ This device went online June 2017.
 
 ## Device Specifications
 
-The connectivity map for the CNOTS in this device are
+The connectivity map for the CNOTS in this device is
 ```
 coupling_map = {1: [2], 2: [3], 4: [3], 4: [5], 6: [7], 8: [7], 9: [10], 11: [10], 12: [11], 12: [13], 13: [14], 15: [14], 15: [0], 0: [1], 3: [14], 13: [4], 12: [5], 6: [11], 7: [10], 9: [8]}
 ```
 Where a: [b] means a CNOT with qubit a as control and b as target can be implemented.
 
-The connectivity is provided by total 22 coplanar waveguide (CPW) "bus" resonators, each of which connects two qubits. The connectivity configuration is shown in the figure below where the colored dots indicate qubits and the colored bars indicate CPW bus resonators. Three different resonant frequencies are used for the bus resonators. The white bars indicate the buses with the resonant frequency of 6.25 GHz, the grey bars 6.45 GHz and the black bars 6.65 GHz.    
+The connectivity is provided by total 22 coplanar waveguide (CPW) "bus" resonators, each of which connects two qubits. The connectivity configuration is shown in the figure below; the colored dots indicate qubits, and the colored bars indicate CPW bus resonators. Three different resonant frequencies are used for the bus resonators. The white bars indicate the buses with a resonant frequency of 6.25 GHz, the grey bars 6.45 GHz, and the black bars 6.65 GHz.    
 
 <img src="images/ibmqx3-bus.png?raw=true" width="750">
 
@@ -45,11 +45,11 @@ The following table shows some of the main experimental parameters for this devi
 | **Q14**  | 6.97800 | 4.8442 | -296.0   | 80  | 390 |
 | **Q15**  | 6.85608 | 5.0842 | -289.8   | 135 | 430 |
 
-where &omega;<sup>R</sup><sub>i</sub> is the resonance frequency of the readout resonator, &omega;<sub>i</sub> = (E<sub>i</sub> - E<sub>0</sub>)/&hbar; is the qubit frequency with i={0...1,0...10,...,01...0,1...0}.  The anharmonicity (&delta;<sub>i</sub>) is the difference between the frequency of the 1-2 transition and the 0-1 transition. That is it is given by &delta;<sub>i</sub> = (E<sub>2i</sub> - 2E<sub>i</sub>+ E<sub>0</sub> )/&hbar;.  &chi; is the qubit-cavity coupling strength, and and &kappa; is the cavity coupling to the environment (&kappa;).
+where &omega;<sup>R</sup><sub>i</sub> is the resonance frequency of the readout resonator, &omega;<sub>i</sub> = (E<sub>i</sub> - E<sub>0</sub>)/&hbar; is the qubit frequency with i={0...1,0...10,...,01...0,1...0}.  The anharmonicity (&delta;<sub>i</sub>) is the difference between the frequency of the 1-2 transition and the 0-1 transition. That is, it is given by &delta;<sub>i</sub> = (E<sub>2i</sub> - 2E<sub>i</sub>+ E<sub>0</sub> )/&hbar;.  &chi; is the qubit-cavity coupling strength, and and &kappa; is the cavity coupling to the environment (&kappa;).
 
-Crosstalk, which we parameterize by &zeta;<sub>ij</sub> = (E<sub>i+j</sub> - E<sub>i</sub> - E<sub>j</sub> + E<sub>0</sub>)/&hbar; is measured using a **J**oint **A**mplification of **ZZ** (JAZZ) experiment, which is a modified **BI**linear **R**otational **D**ecoupling (BIRD) [^fn1]. The standard BIRD sequence used in nuclear magnetic resonance (NMR) is a Ramsey experiment on one qubit with echo pulses on both the measured qubit (Q<sub>i</sub>) and the coupled qubit (Q<sub>j</sub>).  In the JAZZ experiment, this sequence is performed twice, for each initial state of the coupled qubit. Additionally, the phase of the final &pi;/2-rotation is varied in order to detect an oscillating signal. &zeta;<sub>ij</sub> is equal to the frequency difference found between the two experiments.  The JAZZ experiment is shown in the figure below, and the measurements of all &zeta;<sub>ij</sub> are in the following table.  The GD pulse notation is defined below in the Gate Specification section.
+Crosstalk, which we parameterize by &zeta;<sub>ij</sub> = (E<sub>i+j</sub> - E<sub>i</sub> - E<sub>j</sub> + E<sub>0</sub>)/&hbar; is measured using a **J**oint **A**mplification of **ZZ** (JAZZ) experiment, which is a modified **BI**linear **R**otational **D**ecoupling (BIRD) [^fn1]. The standard BIRD sequence used in nuclear magnetic resonance (NMR) is a Ramsey experiment on one qubit, with echo pulses on both the measured qubit (Q<sub>i</sub>) and the coupled qubit (Q<sub>j</sub>).  In the JAZZ experiment, this sequence is performed twice for each initial state of the coupled qubit. Additionally, the phase of the final &pi;/2-rotation is varied in order to detect an oscillating signal. &zeta;<sub>ij</sub> is equal to the frequency difference found between the two experiments.  The JAZZ experiment is shown in the figure below, and the measurements of all &zeta;<sub>ij</sub> are in the following table.  The GD pulse notation is defined below in the Gate Specification section.
 
-[^fn1]: J.R. Garbow, D.P. Weitekamp, A. Pines, Bilinear rotation decoupling of homonuclear scalar interactions, Chemical Physics Letters, Volume 93, Issue 5, 1982, Pages 504-509.
+[^fn1]: J.R. Garbow, D.P. Weitekamp, A. Pines, Bilinear rotation decoupling of homonuclear scalar interactions, *Chemical Physics Letters*, Volume 93, Issue 5, 1982, Pages 504-509.
 
 <img src="images/zz_sequence.png?raw=true" width="400">
 
@@ -75,7 +75,7 @@ In the crosstalk matrix, the error bar is less than 1 kHz for all &zeta;<sub>ij<
 | **Q15** | -66 | - | -53 | - | - | - | - | - | - | - | - | - | - | - | -111 | 
 
 
-The relaxation (T<sub>1</sub>) and coherence (T<sub>2</sub>) times for each qubit are given in the following table. T<sub>1</sub>  is measured with an inversion recovery experiment, and T<sub>2</sub> is measured with a Hahn echo experiment.  These values are averages over 50 measurements each for T<sub>1</sub> and 30 measurements for T<sub>2</sub>, performed over one week. The numbers in parentheses are standard errors of the mean.
+The relaxation (T<sub>1</sub>) and coherence (T<sub>2</sub>) times for each qubit are given in the following table. T<sub>1</sub> is measured with an inversion recovery experiment, and T<sub>2</sub> is measured with a Hahn echo experiment.  These values are averaged over 50 measurements each for T<sub>1</sub> and 30 measurements for T<sub>2</sub>, performed over one week. The numbers in parentheses are standard errors of the mean.
 
 | Qubit | T<sub>1</sub> (&mu;s) | T<sub>2</sub> (&mu;s)|
 |----|----|----|
@@ -109,7 +109,7 @@ The following cartoon shows a depiction of the device I/O microwave setup. We ac
 
 A frame change (FC) is equivalent to applying a virtual *Z*-gate in software, where *Z*(&theta;)=FC(-&theta;). Gaussian derivative (GD) and Gaussian flattop (GF) pulses are defined with amplitude and angle parameters.
 
-All the GD have a gate time of 80ns and the gate times for all GF pulses used in CX gates are given in the table below. There is an additional buffer of 10ns after each GD or GF pulse. 
+All the GD have a gate time of 80 ns, and the gate times for all GF pulses used in CX gates are given in the table below. There is an additional buffer of 10 ns after each GD or GF pulse. 
 
 | CX Gate | GF Gate Time (ns) |
 |----|----|
@@ -137,7 +137,7 @@ All the GD have a gate time of 80ns and the gate times for all GF pulses used in
 
 ### Two-Qubit Gates
 
-All currently calibrated two qubit gates and their directions are defined in the coupling map and shown in the device picture below.  Generally, two qubit gates are possible between neighboring qubits that are connected by a superconducting bus resonator.  The quantum experience uses the cross resonance interaction as the basis for the CX-gate.  This interaction is stronger when choosing the qubit with higher frequency to be the control qubit and the lower frequency qubit to be the target, so the frequencies of the qubits determines the direction of the gate.  There are some exceptions to the rule of high frequency control/low frequency target: the gate direction must be reversed if the higher levels of the control qubit are degenerate with the target qubit or if either qubit is coupled to a third (spectator) qubit that has the same frequency or a higher level with the same frequency as the target.  In two cases on the QX3, no gate is possible between neighboring qubits because of degeneracies with spectator qubits that prevent the gate from working in either direction.  
+All currently calibrated two-qubit gates and their directions are defined in the coupling map, and are shown in the device picture below.  Generally, two-qubit gates are possible between neighboring qubits that are connected by a superconducting bus resonator.  The IBM Q experience uses the cross-resonance interaction as the basis for the CX-gate.  This interaction is stronger when choosing the qubit with higher frequency to be the control qubit and the lower frequency qubit to be the target, so the frequencies of the qubits determines the direction of the gate.  There are some exceptions to the rule of high frequency control/low frequency target: the gate direction must be reversed if the higher levels of the control qubit are degenerate with the target qubit, or if either qubit is coupled to a third (spectator) qubit that has the same frequency or a higher level with the same frequency as the target.  In two cases on the QX3, no gate is possible between neighboring qubits because of degeneracies with spectator qubits that prevent the gate from working in either direction.  
 
 <img src="images/ibmqx3-connections.png?raw=true" height="600">
 
