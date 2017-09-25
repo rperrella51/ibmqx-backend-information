@@ -15,7 +15,7 @@ This device went online September 2017.
 
 The connectivity map for the CNOTS in this device is
 ```
-coupling_map = {1: [2], 2: [3], 3: [4], 5: [4], 6:[7], 6: [7], 8: [7], 9: [10], 11: [10], 12: [11], 12: [13], 13: [14], 15: [14], 15: [0], 0: [1], 2:[15], 3: [14], 13: [4], 12: [5], 6: [11], 7: [10], 9: [8]}
+coupling_map = {1: [2], 2: [3], 3: [4], 5: [4], 6:[7], 8: [7], 9: [10], 11: [10], 12: [11], 12: [13], 13: [14], 15: [14], 15: [0], 15:[2], 3: [14], 13: [4], 12: [5], 6: [11], 7: [10], 9: [8]}
 ```
 Where a: [b] means a CNOT with qubit a as control and b as target can be implemented.
 
@@ -112,30 +112,31 @@ The following cartoon shows a depiction of the device I/O microwave setup. We ac
 
 A frame change (FC) is equivalent to applying a virtual *Z*-gate in software, where *Z*(&theta;)=FC(-&theta;). Gaussian derivative (GD) and Gaussian flattop (GF) pulses are defined with amplitude and angle parameters.
 
-All the GD have a gate time of 80 ns, and the gate times for all GF pulses used in CX gates are given in the table below. There is an additional buffer of 10 ns after each GD or GF pulse. 
+All the GD have a gate time of 80 ns, and the gate times for all GF pulses used in CX gates are given in the table below (rounded to nearest ns). There is an additional buffer of 10 ns after each GD or GF pulse. 
 
 | CX Gate | GF Gate Time (ns) |
 |----|----|
-| **CX0_1**   | 209 |
 | **CX1_2**   | 260 |
 | **CX2_3**   | 230 |
-| **CX3_14**  | 348 |
-| **CX4_3**   | 304 |
-| **CX4_5**   | 310 |
+| **CX3_4**  | 252 |
+| **CX5_4**   | 267|
+| **CX6_5**   | 261 |
 | **CX6_7**   | 170 |
-| **CX6_11**  | 174 |
-| **CX7_10**  | 187 |
-| **CX8_7**   | 265 |
-| **CX9_8**   | 239 |
-| **CX9_10**  | 283 |
-| **CX11_10** | 196 |
-| **CX12_5**  | 270 |
-| **CX12_11** | 183 |
-| **CX12_13** | 191 |
-| **CX13_4**  | 240 |
-| **CX13_14** | 205 |
-| **CX15_0**  | 348 |
+| **CX8_7**  | 265 |
+| **CX9_8**  | 239 |
+| **CX9_10**   | 209 |
+| **CX11_10**   | 196 |
+| **CX12_11**  | 213|
+| **CX12_13** | 200 |
+| **CX13_14**  | 205 |
 | **CX15_14** | 183 |
+| **CX15_0** | 317 |
+| **CX15_2**  | 391 |
+| **CX3_14** | 283|
+| **CX13_4**  | 240 |
+| **CX12_5** | 270 |
+|**CX6_11**| 174 |
+|**CX7_10**| 296 |
 
 
 ### Two-Qubit Gates
