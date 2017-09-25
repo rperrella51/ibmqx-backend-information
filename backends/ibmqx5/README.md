@@ -78,26 +78,26 @@ In the crosstalk matrix, the error bar is less than 1 kHz for all &zeta;<sub>ij<
 | **Q15** | -61 | - | -55 | - | - | - | - | - | - | - | - | - | - | - | -106 | 
 
 
-The relaxation (T<sub>1</sub>) and coherence (T<sub>2</sub>) times for each qubit are given in the following table. T<sub>1</sub> is measured with an inversion recovery experiment, and T<sub>2</sub> is measured with a Hahn echo experiment.  These values are averaged over 50 measurements each for T<sub>1</sub> and 30 measurements for T<sub>2</sub>, performed over one week. The numbers in parentheses are standard errors of the mean.
+The relaxation (T<sub>1</sub>) and coherence (T<sub>2</sub>) times for each qubit are given in the following table. T<sub>1</sub> is measured with an inversion recovery experiment, and T<sub>2</sub> is measured with a Hahn echo experiment.  These values are averaged over 12 measurements each for T<sub>1</sub> and T<sub>2</sub>, performed over one week. The numbers in parentheses are the standard deviation. 
 
 | Qubit | T<sub>1</sub> (&mu;s) | T<sub>2</sub> (&mu;s)|
 |----|----|----|
-| **Q0** | 39.85 (0.69) | 34.97 (0.55) |
-| **Q1** | 33.03 (0.31) | 60.63 (1.61) |
-| **Q2** | 44.58 (0.76) | 48.79 (1.05) |
-| **Q3** | 52.9 (0.66) | 77.8 (2.05) |
-| **Q4** | 42.44 (0.48) | 78.74 (1.18) |
-| **Q5** | 46.4 (0.91) | 76.89 (2.07) |
-| **Q6** | 42.8 (0.7) | 28.96 (0.46) |
-| **Q7** | 33.07 (0.54) | 50.53 (1.16) |
-| **Q8** | 45.99 (0.67) | 72.51 (1.41) |
-| **Q9** | 43.59 (0.61) | 69.14 (1.59) |
-| **Q10** | 51.7 (0.99) | 70.93 (2.4) |
-| **Q11** | 47.52 (0.69) | 54.33 (1.02) |
-| **Q12** | 25.24 (0.31) | 32.63 (1.09) |
-| **Q13** | 45.94 (0.49) | 61.26 (0.99) |
-| **Q14** | 49.78 (0.79) | 43.04 (0.94) |
-| **Q15** | 36.93 (1.81) | 45.72 (1.86) |
+| **Q0** | 37 (4) | 31 (5) |
+| **Q1** | 35 (4) | 58 (10) |
+| **Q2** | 48 (6) | 64 (7) |
+| **Q3** | 46 (5) | 70 (15) |
+| **Q4** |  49 (8) | 74 (24) |
+| **Q5** | 49 (4) | 50 (5) |
+| **Q6** | 44 (7) | 74 (12) |
+| **Q7** | 37 (4) | 49 (7) |
+| **Q8** | 49 (7) | 68 (19) |
+| **Q9** | 48 (5) | 88 (14) |
+| **Q10** | 28 (21) | 49 (36) |
+| **Q11** | 45 (7) | 86 (16) |
+| **Q12** | 50 (7) | 33 (3) |
+| **Q13** | 48 (6) | 82 (12) |
+| **Q14** | 36 (3) | 65 (6) |
+| **Q15** | 48 (7) | 89 (17) |
 
 
 ## Experimental Setup
