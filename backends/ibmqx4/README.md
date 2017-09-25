@@ -6,7 +6,7 @@ This document contains information about the IBM Q experience **ibmqx4** backend
 Baleegh Adbo, Lev Bishop, Markus Brink, Jerry Chow, Antonio Córcoles, Andrew Cross, Jay M. Gambetta, Oblesh Jinka, Abhinav Kandala, Sami Rosenblatt, Jim Rozen, Maika Takita
 
 ## Status History 
-This device went online (soon)
+This device went online September 25th 2017.
 
 The connectivity map for the CNOTS in this device is
 ```
