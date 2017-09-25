@@ -3,10 +3,11 @@
 This document contains information about the IBM Q experience **ibmqx5** backend. It is a somewhat reconfigured version of ibmqx3.
 
 ## Contributors (alphabetical)
-Lev S Bishop
+Baleegh Abdo, Vivekananda Adiga, Lev Bishop, Markus Brink, Nicholas Bronn, Jerry Chow, Antonio Córcoles, Andrew Cross, Jay M. Gambetta, Jose Chavez-Garcia, Jared Hertzberg, Oblesh Jinka, George Keefe, David McKay, Salvatore Olivadese, Jason Orcutt, Hanhee Paik, Jack Rohrs, Sami Rosenblatt, Jim Rozen, Martin Sandberg, Dongbing Shao, Sarah Sheldon, Firat Solgun, Maika Takita
+
 
 ## Status History 
-This device went online September 2017.
+This device went online (soon).
 
 
 ---
@@ -143,7 +144,7 @@ All the GD have a gate time of 80 ns, and the gate times for all GF pulses used 
 
 All currently calibrated two-qubit gates and their directions are defined in the coupling map, and are shown in the device picture below.  Generally, two-qubit gates are possible between neighboring qubits that are connected by a superconducting bus resonator.  The IBM Q experience uses the cross-resonance interaction as the basis for the CX-gate.  This interaction is stronger when choosing the qubit with higher frequency to be the control qubit and the lower frequency qubit to be the target, so the frequencies of the qubits determines the direction of the gate.  There are some exceptions to the rule of high frequency control/low frequency target: the gate direction must be reversed if the higher levels of the control qubit are degenerate with the target qubit, or if either qubit is coupled to a third (spectator) qubit that has the same frequency or a higher level with the same frequency as the target.  In two cases on the QX3, no gate is possible between neighboring qubits because of degeneracies with spectator qubits that prevent the gate from working in either direction.  
 
-<img src="images/ibmqx3-connections.png?raw=true" height="600">
+<!--<img src="images/ibmqx3-connections.png?raw=true" height="600">-->
 
 Reported gate errors are measured using simultaneous randomized benchmarking (RB)[^fn2]. RB gives the average error per Clifford gate, which we convert to error per gate according to the set of primitive gates used on QX3.
 
