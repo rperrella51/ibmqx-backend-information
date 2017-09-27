@@ -11,7 +11,7 @@ This device went online (soon).
 
 
 ---
-# Below is copied from ibmqx3 and should be updated for ibmqx5
+
 ## Device Specifications 
 
 The connectivity map for the CNOTS in this device is
