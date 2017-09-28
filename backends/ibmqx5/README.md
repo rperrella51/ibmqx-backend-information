@@ -1,13 +1,13 @@
 # IBM QX5
 
-This document contains information about the IBM Q experience **ibmqx5** backend. It is a somewhat reconfigured version of ibmqx5.
+This document contains information about the IBM Q experience **ibmqx5** backend. It is a somewhat reconfigured version of ibmqx3.
 
 ## Contributors (alphabetical)
 Baleegh Abdo, Vivekananda Adiga, Lev Bishop, Markus Brink, Nicholas Bronn, Jerry Chow, Antonio Córcoles, Andrew Cross, Jay M. Gambetta, Jose Chavez-Garcia, Jared Hertzberg, Oblesh Jinka, George Keefe, David McKay, Salvatore Olivadese, Jason Orcutt, Hanhee Paik, Jack Rohrs, Sami Rosenblatt, Jim Rozen, Martin Sandberg, Dongbing Shao, Sarah Sheldon, Firat Solgun, Maika Takita
 
 
 ## Status History 
-This device went online (soon).
+This device went online 09/28/2017.
 
 
 ---
