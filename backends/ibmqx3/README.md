@@ -1,4 +1,4 @@
-# IBM QX3
+# IBM QX3: Albatross
 
 This document contains information about the IBM Q experience **ibmqx3** backend. 
 
