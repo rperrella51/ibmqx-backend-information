@@ -1,4 +1,4 @@
-# IBM QX5
+# IBM QX5: Albatross
 
 This document contains information about the IBM Q experience **ibmqx5** backend. It is a somewhat reconfigured version of ibmqx3.
 
