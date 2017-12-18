@@ -1,4 +1,4 @@
-# IBM QX4
+# IBM QX4: Raven
 
 This document contains information about the IBM Q experience **ibmqx4** backend. 
 
