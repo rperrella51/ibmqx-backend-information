@@ -1,4 +1,4 @@
-# IBM QX2
+# IBM QX2: Sparrow
 
 This document contains information about the IBM Q experience **ibmqx2** backend. 
 
